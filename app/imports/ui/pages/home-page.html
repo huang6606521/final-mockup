@@ -1,0 +1,39 @@
+<template name="Home_Page">
+  <div class="ui container">
+
+    {{#if Template.subscriptionsReady}}
+    <table style="margin-top: 20px" class="ui inverted gray table">
+      <thead>
+      <tr>
+        <th>Session</th>
+        <th>Course</th>
+        <th>Topic</th>
+        <th>Start Time</th>
+        <th>End Time</th>
+        <th>Place</th>
+        <th>People</th>
+        <th>More Info</th>
+      </tr>
+      </thead>
+
+      <tbody>
+      {{#each sessions in sessionsList}}
+      <tr>
+        <td></td>
+        <td>{{sessions.course}}</td>
+        <td>{{sessions.topic}}</td>
+        <td>{{sessions.starttime}}</td>
+        <td>{{sessions.endtime}}</td>
+        <td>{{sessions.place}}</td>
+        <td>{{sessions.people}}</td>
+      </tr>
+      {{/each}}
+      </tbody>
+    </table>
+    {{else}}
+    {{> Loading}}
+    {{/if}}
+
+
+  </div>
+</template>

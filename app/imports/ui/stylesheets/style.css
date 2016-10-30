@@ -1,0 +1,11 @@
+body {
+
+}
+
+.ui.inverted.menu{
+  background-color:#747472;
+}
+
+#login-buttons a, .accounts-dialog a{
+  color: rgba(0,255,255,0.901961);
+}

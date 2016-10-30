@@ -1,0 +1,14 @@
+<template name="Header">
+    <img style="max-height: 200px" class="ui fluid image" src="/images/1.jpg">
+    <div style="margin: 0px; border-radius:0px" class="ui borderless inverted menu">
+  <div class="ui container">
+      <a class="item" href="{{pathFor 'Home_Page'}}"><h1>Study Buddy</h1></a>
+      <a class="{{ isActiveRoute 'Existing_Session_Page'}} item" href="{{ pathFor 'Existing_Session_Page' }}">Existing_Session_Page </a>
+      <a class="{{ isActiveRoute 'Create_Session_Page'}} item" href="{{ pathFor 'Create_Session_Page' }}">Create a Study Session </a>
+      <a class="{{ isActiveRoute 'Profile_Page'}} item" href="{{ pathFor 'Profile_Page' }}">Profile_Page </a>
+
+
+    <a  href="#" class="item">{{> loginButtons }} </a>
+    </div>
+  </div>
+</template>
