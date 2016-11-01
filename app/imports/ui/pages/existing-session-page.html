@@ -21,7 +21,7 @@
       <tr>
         <td><div class="ui checkbox">
           <input type="checkbox" name="example">
-          <label>Select</label>
+          <label style="color: white">Select</label>
         </div>
         </td>
         <td>{{sessions.course}}</td>
@@ -30,6 +30,7 @@
         <td>{{sessions.endtime}}</td>
         <td>{{sessions.place}}</td>
         <td>{{sessions.people}}</td>
+        <td><a href="{{pathFor 'More_Info_Page'}}">More</a></td>
       </tr>
       {{/each}}
       </tbody>

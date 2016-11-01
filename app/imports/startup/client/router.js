@@ -36,6 +36,13 @@ FlowRouter.route('/existing-session', {
   },
 });
 
+FlowRouter.route('/login', {
+  name: 'Login_Page',
+  action() {
+    BlazeLayout.render('App_Body', { main: 'Login_Page' });
+  },
+});
+
 FlowRouter.route('/edit-contact/:_id', {
   name: 'Edit_Contact_Page',
   action() {

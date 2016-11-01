@@ -13,6 +13,14 @@ import './create-session-page.js';
 import './profile-page.html';
 
 import './existing-session-page.html';
+import './existing-session-page.js';
+
+import './more-info-page.html';
+
+
+import './login-page.html';
+import './login-page.js';
+
 
 import './home-page.html';
 import './home-page.js';

@@ -1,6 +1,7 @@
 import { Template } from 'meteor/templating';
 import { Sessions } from '../../api/sessions/sessions.js';
 
+
 Template.Existing_Session_Page.helpers({
 
   /**
@@ -17,3 +18,4 @@ Template.Existing_Session_Page.onCreated(function onCreated() {
   });
 
 });
+

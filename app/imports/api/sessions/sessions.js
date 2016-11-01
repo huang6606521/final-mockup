@@ -23,13 +23,7 @@ export const sessionsSchema = new SimpleSchema({
     max: 200,
 
   },
-  creator: {
-    label: 'creator',
-    type: String,
-    optional: false,
-    max: 200,
 
-  },
   starttime: {
     label: 'starttime',
     type: String,

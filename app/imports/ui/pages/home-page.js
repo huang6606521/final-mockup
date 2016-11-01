@@ -17,3 +17,4 @@ Template.Home_Page.onCreated(function onCreated() {
   });
 
 });
+
